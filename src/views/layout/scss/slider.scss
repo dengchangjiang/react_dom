@@ -1,0 +1,22 @@
+.slider {
+        width: 300px;
+        height: 100vh;
+        background: rgb(55, 69, 97);
+        .slide_menu {
+                display: flex;
+                flex-direction: column;
+                a {
+                        text-decoration: none;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        color: #ffffff;
+                }
+              .active{
+                      background:#0089FF;
+                      color:#fff;
+              }
+        }
+}
