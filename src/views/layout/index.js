@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "./slider.js";
 import { Route, Switch ,Redirect} from "react-router-dom";
-import routes from "../../router";
+import routes from "@/router";
 import "./scss/index.scss"
 
 class Layout extends React.Component {
@@ -13,7 +13,7 @@ class Layout extends React.Component {
           <Switch>
             {routes.map((item) => {
               return (
-                <Route path={item.path}  key={item.path} component={item.component}></Route>
+                <Route exact path={item.path}  key={item.path} component={item.component}></Route>
               );
             })}
             <Redirect to="/home"/>
