@@ -9,10 +9,10 @@ function App() {
       <HashRouter>
         <Switch>
           <Route exact path="/login" component={Login} />
-          <Route component={NotFound} />
-          <Route  path="/">
+          <Route  path="/" >
             {getToken() ? <Layout /> : <Redirect to="/login" />}
           </Route>
+          <Route component={NotFound} />
         </Switch>
       </HashRouter>
   );
